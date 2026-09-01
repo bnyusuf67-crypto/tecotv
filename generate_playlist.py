@@ -5,7 +5,9 @@ import sys
 import subprocess
 import shutil
 import json
-import urllib3
+from urllib3 import PoolManager
+from urllib3.exceptions import HTTPError, TimeoutError
+from urllib3.util import Retry
 from datetime import datetime
 
 # -------------------- KANAL LİSTESİ --------------------
