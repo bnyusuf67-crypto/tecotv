@@ -5,3 +5,5 @@ Bu repoyu fork ettikten sonra https://ytdlnis.org/download sitesinden uygulamay�
 ile başladığından emin olun ve diğer # ile başlayan yerleri silin. (başına #  koyun, yani readmeden kopyaladığınız cümlenin başına # koyun ve bir boşluk bırakın.) bilgisayar kullanıyor iseniz Get Cookies.txt Locally eklentisini kurarak https://www.youtube.com sitesinden çerez alabilirsiniz.
 # Eklenti İndirme kaynağı
 https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc?pli=1
+# Notlar
+Bu repodaki çerezler genel olarak aktif olduğum saatlerde manuel güncellenmektedir. Crona rağmen gecikme ihtimali var birde, iyi seyirler. ayrıca streams.txt dosyasını da isteğe bağlı olarak güncellenebilir ve hiçbir ülke bulunmadı ise seçilen ülke kodunu isteğe bağlı olarak 2 harfli ve kısaca değiştirebilirsiniz.
