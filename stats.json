@@ -1,0 +1,35 @@
+{
+  "total": 3,
+  "live": 3,
+  "offline": 0,
+  "error": 0,
+  "qualities": {
+    "1080p": 3,
+    "720p": 0,
+    "480p": 0,
+    "other": 0
+  },
+  "by_category": {
+    "General": 3
+  },
+  "by_country": {
+    "UK": 3
+  },
+  "individual_channels": [
+    {
+      "name": "S\u00d6ZC\u00dc Televizyonu",
+      "file": "channels/s\u00f6zc\u00fc_televizyonu.m3u8",
+      "quality": "1080p"
+    },
+    {
+      "name": "B\u0130Z\u0130MEV TV",
+      "file": "channels/bi\u0307zi\u0307mev_tv.m3u8",
+      "quality": "1080p"
+    },
+    {
+      "name": "Diyanet \u00c7ocuk",
+      "file": "channels/diyanet_\u00e7ocuk.m3u8",
+      "quality": "1080p"
+    }
+  ]
+}
