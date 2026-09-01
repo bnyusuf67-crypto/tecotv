@@ -60,8 +60,11 @@ def get_live_manifest_url(youtube_url):
             [
                 YT_DLP, 
                 "--cookies", "cookies.txt", 
-                "--geo-bypass-country", "TR",  # <-- Buraya "TR" eklendi
-                "--xff", "TR", 
+                "--geo-bypass-country", "TR", 
+                "--xff", "TR",
+                "--js-runtimes", "deno",
+                "--remote-components", "ejs:github",
+                "--extractor-args", "youtube:client=mweb",
                 "--dump-single-json", 
                 youtube_url
             ],
