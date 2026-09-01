@@ -54,24 +54,43 @@ http = PoolManager(headers={"User-Agent": USER_AGENT})
 
 # -------------------- FONKSİYONLAR --------------------
 def get_live_manifest_url(youtube_url):
-    """YouTube canlı yayınından --dump-single-json ile manifest_url adresini çeker."""
+    """YouTube canlı yayınından güncel bypass parametreleri ile manifest_url çeker."""
     try:
+        # YouTube bot engelini aşmak için kritik parametreler
+        komut = [
+            YT_DLP,
+            "--dump-single-json",
+            "--extractor-args", "youtube:player_client=default,web,ios;-android_sdkless",
+            "-4",
+            "--no-cache-dir",
+            youtube_url
+        ]
+        
         result = subprocess.run(
-            [
-                YT_DLP, 
-                "--cookies", "cookies.txt", 
-                "--geo-bypass-country", "TR", 
-                "--xff", "TR",
-                "--js-runtimes", "deno",
-                "--remote-components", "ejs:github",
-                "--extractor-args", "youtube:client=mweb",
-                "--dump-single-json", 
-                youtube_url
-            ],
+            komut,
             capture_output=True,
             text=True,
             timeout=YT_DLP_TIMEOUT
         )
+        
+        if result.returncode != 0:
+            return None, f"yt-dlp hatası (Kod {result.returncode}): {result.stderr.strip()}"
+        
+        video_data = json.loads(result.stdout.strip())
+        manifest_url = video_data.get("manifest_url")
+        
+        if not manifest_url:
+            return None, "manifest_url bulunamadı."
+            
+        return manifest_url, None
+        
+    except subprocess.TimeoutExpired:
+        return None, "yt-dlp zaman aşımı"
+    except json.JSONDecodeError:
+        return None, "yt-dlp çıktısı JSON olarak ayrıştırılamadı (IP engeli veya CAPTCHA olabilir)."
+    except Exception as e:
+        return None, str(e)
+
 
         if result.returncode != 0:
             return None, f"yt-dlp hatası: {result.stderr.strip()}"
