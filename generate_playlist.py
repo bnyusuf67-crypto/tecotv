@@ -7,7 +7,7 @@ import shutil
 import json
 from urllib3 import PoolManager
 from urllib3.exceptions import HTTPError, TimeoutError
-from urllib3.util import Retry
+from urllib3.util import Retry, Timeout
 from datetime import datetime
 
 # -------------------- KANAL LİSTESİ --------------------
