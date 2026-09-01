@@ -50,7 +50,7 @@ if not YT_DLP:
     sys.exit(1)
 
 # urllib3 Havuz Yöneticisi (PoolManager) oluşturma
-http = urllib3.PoolManager(headers={"User-Agent": USER_AGENT})
+http = PoolManager(headers={"User-Agent": USER_AGENT})
 
 # -------------------- FONKSİYONLAR --------------------
 def get_live_manifest_url(youtube_url):
@@ -102,7 +102,11 @@ def main():
     ana_m3u = "#EXTM3U\n"
     print("📡 Kanal linkleri ve m3u8 içerikleri toplanıyor...\n")
 
-    for slug, isim, url in kanallar:
+    for kanal in kanallar:
+        slug = kanal["slug"]
+        isim = kanal["name"]
+        url = kanal["youtube_url"]
+        
         print(f"➡️  {isim} ... ", end="", flush=True)
         
         # 1. Aşama: yt-dlp ile manifest_url'i bul
