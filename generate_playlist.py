@@ -57,11 +57,19 @@ def get_live_manifest_url(youtube_url):
     """YouTube canlı yayınından --dump-single-json ile manifest_url adresini çeker."""
     try:
         result = subprocess.run(
-            [YT_DLP, "--cookies", "cookies.txt", "--geo-bypass-country", "--xff", "TR", "--dump-single-json", youtube_url],
+            [
+                YT_DLP, 
+                "--cookies", "cookies.txt", 
+                "--geo-bypass-country", "TR",  # <-- Buraya "TR" eklendi
+                "--xff", "TR", 
+                "--dump-single-json", 
+                youtube_url
+            ],
             capture_output=True,
             text=True,
             timeout=YT_DLP_TIMEOUT
         )
+
         if result.returncode != 0:
             return None, f"yt-dlp hatası: {result.stderr.strip()}"
         
