@@ -144,7 +144,6 @@ def main():
         f.write(ana_m3u)
 
     print(f"\n📁 Dosyalar '{STREAMS_DIR}/' klasörüne ve '{PLAYLIST_FILE}' dosyasına kaydedildi.")
-    git_push()
 
 if __name__ == "__main__":
     main()
