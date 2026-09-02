@@ -152,9 +152,10 @@ class YouTubePlaylistGenerator:
             'playlist_items': '1',
             'match_filter': 'is_live',
             'retries': 5,
+            'allow_unplayable_formats': True,             
             'extractor_args': {
                 'youtube': {
-                    'player_client': ['android', 'ios'],
+                    'player_client': ['web', 'mweb', 'android', 'ios'],
                     'live_from_start': True,
                     'skip': ['webpage', 'configs']
                 }
@@ -169,6 +170,7 @@ class YouTubePlaylistGenerator:
                 'Accept-Language': f'en-{country},en;q=0.9',
                 'Origin': 'https://www.youtube.com',
                 'Referer': 'https://www.youtube.com/',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
             },
         }
         
