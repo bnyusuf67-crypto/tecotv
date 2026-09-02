@@ -69,15 +69,20 @@ jobs:
           python generate.py
           echo "Generation complete"
 
-      - name: Commit and push changes
+      - name: Stage generated playlists and assets
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Sadece m3u8, epg, logo ve kanal listelerini ekler. 
+          # cookies.txt ve wgcf (WARP) dosyalarını ASLA eklemez.
           git add streams*.m3u8 epg.xml stats.json logos/ channels/ 2>/dev/null || true
-          git commit -m "Update playlist - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push origin main
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update playlist - $(date -u +'%Y-%m-%d %H:%M UTC')" -a || echo "No changes to commit"
+          git push || echo "Push failed"
 
       - name: Cleanup sensitive files
-        if: always()
+        if: always() # Script hata verse bile bu temizlik adımı mutlaka çalışır
         run: |
-          rm -f cookies.txt wgcf-profile.conf wgcf-account.toml 2>/dev/null || true
+          rm -f cookies.txt wgcf-profile.conf wgcf-account.toml 2>/dev/null || true 
