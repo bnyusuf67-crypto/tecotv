@@ -152,10 +152,9 @@ class YouTubePlaylistGenerator:
             'playlist_items': '1',
             'match_filter': 'is_live',
             'retries': 5,
-            'allow_unplayable_formats': True,             
             'extractor_args': {
                 'youtube': {
-                    'player_client': ['web', 'mweb', 'android', 'ios'],
+                    'player_client': ['android', 'ios'],
                     'live_from_start': True,
                     'skip': ['webpage', 'configs']
                 }
@@ -170,7 +169,6 @@ class YouTubePlaylistGenerator:
                 'Accept-Language': f'en-{country},en;q=0.9',
                 'Origin': 'https://www.youtube.com',
                 'Referer': 'https://www.youtube.com/',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
             },
         }
         
@@ -327,13 +325,20 @@ class YouTubePlaylistGenerator:
                     expiry_time = (datetime.now() + timedelta(hours=5)).strftime('%H:%M UTC')
                     
                     with open(filename, 'w', encoding='utf-8') as f:
-                        f.write(f"""#EXTM3U\n
+                        f.write(f"""#EXTM3U
+#EXT-X-VERSION:3
+# Channel: {channel_name}
+# ID: {channel_id}
+# Quality: {quality_tag}
+# Country: {country}
+# Status: LIVE (as of {datetime.now().strftime('%H:%M UTC')})
+# Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}
+# URL expires: ~{expiry_time} (refresh playlist if expired)
+
 """)
-                        f.write(f'#EXTINF:0 tvg-id="{channel_id}"{logo_attr} tvg-name="{channel_name}" group-title="Individual",{channel_name} [{quality_tag}] LIVE\n')
-                        f.write(f'#EXTVLCOPT:http-origin=https://www.youtube.com\n')
-                        f.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0\n')
-                        f.write(f'#EXTVLCOPT:http-reconnect=true\n')
-                        f.write(main_stream['url'] + '\n')
+                        f.write(f'#EXTINF:-1 tvg-id="{channel_id}"{logo_attr} tvg-name="{channel_name}" group-title="Individual",{channel_name} [{quality_tag}] 🔴 LIVE\n')
+                        f.write(main_stream['url'])
+                        f.write("\n")
                     
                     print(f"  ✅ LIVE ({country}): {filename}")
                     
