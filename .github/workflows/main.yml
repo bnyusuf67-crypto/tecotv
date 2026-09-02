@@ -3,7 +3,7 @@ name: YouTube Live M3U8 Generator
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */5 * * *'
+    - cron: '0 */3 * * *'
   push:
     paths:
       - 'streams.txt'
@@ -74,12 +74,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add streams*.m3u8 epg.xml stats.json logos/ channels/ 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
           git commit -m "Update playlist - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          git push origin main
 
       - name: Cleanup sensitive files
         if: always()
