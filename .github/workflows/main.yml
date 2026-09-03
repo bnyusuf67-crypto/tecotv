@@ -3,7 +3,7 @@ name: YouTube Live M3U8 Generator
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */5 * * *'
   push:
     paths:
       - 'streams.txt'
@@ -69,20 +69,22 @@ jobs:
           python generate.py
           echo "Generation complete"
 
-      - name: Stage generated playlists and assets
+      - name: Commit and push changes
         run: |
-          # Sadece m3u8, epg, logo ve kanal listelerini ekler. 
-          # cookies.txt ve wgcf (WARP) dosyalarını ASLA eklemez.
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add streams*.m3u8 epg.xml stats.json logos/ channels/ 2>/dev/null || true
 
-      - name: Commit and Push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Update playlist - $(date -u +'%Y-%m-%d %H:%M UTC')" -a || echo "No changes to commit"
-          git push || echo "Push failed"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update playlist - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
 
       - name: Cleanup sensitive files
-        if: always() # Script hata verse bile bu temizlik adımı mutlaka çalışır
+        if: always()
         run: |
-          rm -f cookies.txt wgcf-profile.conf wgcf-account.toml 2>/dev/null || true 
+          rm -f cookies.txt wgcf-profile.conf wgcf-account.toml 2>/dev/null || true
