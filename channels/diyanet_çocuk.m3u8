@@ -1,12 +1,7 @@
 #EXTM3U
-#EXT-X-VERSION:3
-# Channel: Diyanet Çocuk
-# ID: UCCfTktnzWK__FUN4gj0zIpA
-# Quality: 1080p
-# Country: UK
-# Status: LIVE (as of 16:00 UTC)
-# Generated: 2026-09-03 16:00:30 UTC
-# URL expires: ~21:00 UTC (refresh playlist if expired)
 
-#EXTINF:-1 tvg-id="UCCfTktnzWK__FUN4gj0zIpA" tvg-logo="logos/UCCfTktnzWK__FUN4gj0zIpA.jpg" tvg-name="Diyanet Çocuk" group-title="Individual",Diyanet Çocuk [1080p] 🔴 LIVE
+#EXTINF:0 tvg-id="UCIHMK8qtjB_GNuXmeex6i8g" tvg-logo="logos/UCIHMK8qtjB_GNuXmeex6i8g.jpg" tvg-name="BİZİMEV TV" group-title="Individual",BİZİMEV TV [1080p] LIVE
+#EXTVLCOPT:http-origin=https://www.youtube.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0
+#EXTVLCOPT:http-reconnect=true#EXTINF:-1 tvg-id="UCCfTktnzWK__FUN4gj0zIpA" tvg-logo="logos/UCCfTktnzWK__FUN4gj0zIpA.jpg" tvg-name="Diyanet Çocuk" group-title="Individual",Diyanet Çocuk [1080p] 🔴 LIVE
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1788472829/ei/nZmZavSQMtP4sfIPz-q78Qk/ip/2a09:bac5:6196:183c::26a:a9/id/_VsMIRdOtXI.3/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr17---sn-qja5m5-5g.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/ss/1/ssa/1/bui/AR3QkAmY1mwUsfYNkfqbO_P6cNh-wua8LcqvX7CLKjcTTitUd54llElgQ9psqzo91dwEUvX_C7QLZgUH/spc/I-rgIbaY_e0EbnrxdD_mbJyrNooQwfSicay9eQlIBBZYAMms4WhqISfTqznojbqO/vprv/1/reg/0/playlist_type/DVR/met/1788451230,/mh/hJ/mm/44/mn/sn-qja5m5-5g/ms/lva/mv/u/mvi/17/pl/39/rms/lva,lva/dover/11/pacing/0/epbp/1/keepalive/yes/fexp/51565115,52135441/mt/1788450785/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,ss,ssa,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRQIgSu02vb3E_kLik9UElEQ8Uiug73pBb_QkbIBSxj9pK98CIQDGabpazk5iOdPimqfcbOle0RKnqL1y8MCMSom6yIG7oA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhANLIEvOJsDAQtBC_yUbePWkyS78cZWoutYB38HYKGHtaAiEAkz-QOg8x6EQq8bE-eAyBDj5WdlBCxh2vZaRj0qo_7PM%3D/playlist/index.m3u8
