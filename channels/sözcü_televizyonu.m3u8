@@ -1,12 +1,7 @@
 #EXTM3U
-#EXT-X-VERSION:3
-# Channel: SÖZCÜ Televizyonu
-# ID: UCOulx_rep5O4i9y6AyDqVvw
-# Quality: 1080p
-# Country: UK
-# Status: LIVE (as of 16:00 UTC)
-# Generated: 2026-09-03 16:00:30 UTC
-# URL expires: ~21:00 UTC (refresh playlist if expired)
 
-#EXTINF:-1 tvg-id="UCOulx_rep5O4i9y6AyDqVvw" tvg-logo="logos/UCOulx_rep5O4i9y6AyDqVvw.jpg" tvg-name="SÖZCÜ Televizyonu" group-title="Individual",SÖZCÜ Televizyonu [1080p] 🔴 LIVE
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1788472815/ei/j5mZaqOEFeSWsfIPhaWO8A0/ip/2a09:bac5:6196:183c::26a:a9/id/ztmY_cCtUl0.4/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr10---sn-qja5m5-5g.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/ss/1/ssa/1/bui/AR3QkAme0B8V_BOC6S3tEEz32mYt7VI2ZEHzggoN5ltaLjZep87r3h-9yybqwNWnkcEXx8laKn6I9tQH/spc/I-rgIVe-nIbMgyh2D4n6dS_iSFkhRpRKmU4iI_7bqm0SKJAl07Ah6A21vjzTAACZ/vprv/1/reg/0/playlist_type/DVR/met/1788451215,/mh/2L/mm/44/mn/sn-qja5m5-5g/ms/lva/mv/u/mvi/10/pl/39/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,52135441,52189887/mt/1788451048/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,ss,ssa,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRQIgF0Tb02E9ZRSmaB178uh98CJbatI9aZAeFU_RMm0GKaECIQCMhZLV7n_QGhq3kKsBhh7xOJ6-MIiHTL4-02uRgCWymA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAIQHoGEJfZjH8GPEYyT9ggh6TgehK1nLwZWZGfyMHsCmAiEAna11oi1rovPmvCUa2Tu0_-IBQDHbMz9nDoJPMBs32yM%3D/playlist/index.m3u8
+#EXTINF:0 tvg-id="UCOulx_rep5O4i9y6AyDqVvw" tvg-logo="logos/UCOulx_rep5O4i9y6AyDqVvw.jpg" tvg-name="SÖZCÜ Televizyonu" group-title="Individual",SÖZCÜ Televizyonu [1080p] LIVE
+#EXTVLCOPT:http-origin=https://www.youtube.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0
+#EXTVLCOPT:http-reconnect=true
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1788534990/ei/boyaaujeBviasfIPtvzauAU/ip/2a09:bac1:76e0:830::21f:86/id/ztmY_cCtUl0.4/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-hp57kndk.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/ss/1/ssa/1/bui/AR3QkAmy_DY0OQXDpXwB1nbJ0azhXCqrXuCh7OMzeqs2ztmSqN-yIp54h0KvL9ULMjCA8tuRBiWbDMlA/spc/I-rgIZHPGf2AseOqcv_VYl6ErP7UQxIarZrrlXKbfVWRGl_NAY7K2ZFWtsBgWGIp/vprv/1/reg/0/playlist_type/DVR/initcwndbps/2591250/met/1788513390,/mh/2L/mm/44/mn/sn-hp57kndk/ms/lva/mv/m/mvi/5/pl/52/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,52135441/mt/1788511966/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,ss,ssa,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRgIhALk6uFmesgZjzymVMQuaFxYxUUWA7fFGl7pLcVsRFe1QAiEA4_FltWIuU6EgB7zDkqoGT1jTM2Plq7jJzl5z26SpmNU%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIhALBQA3Ic4CsmkTJiyL3RbIYWfDF5sQuBKjo7PlDykbIJAiAINEWs2P2lz7dv_Zk0bcaB71EBm5Z8XqhECSJz_fh1kQ%3D%3D/playlist/index.m3u8

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<tv generator-info-name="YouTube Live EPG Generator" date="20260903160030 ">
+<tv generator-info-name="YouTube Live EPG Generator" date="20260904091649 ">
   <channel id="UCOulx_rep5O4i9y6AyDqVvw">
     <display-name>SÖZCÜ Televizyonu</display-name>
     <icon src="logos/UCOulx_rep5O4i9y6AyDqVvw.jpg"/>
   </channel>
-  <programme start="20260903160030 +0000" stop="20260903170030 +0000" channel="UCOulx_rep5O4i9y6AyDqVvw">
-    <title>SÖZCÜ TV Canlı Yayını ᴴᴰ 2026-09-03 16:00</title>
+  <programme start="20260904091649 +0000" stop="20260904101649 +0000" channel="UCOulx_rep5O4i9y6AyDqVvw">
+    <title>SÖZCÜ TV Canlı Yayını ᴴᴰ 2026-09-04 09:16</title>
     <desc>Live YouTube stream from SÖZCÜ Televizyonu</desc>
     <category>Live</category>
   </programme>
@@ -13,8 +13,8 @@
     <display-name>BİZİMEV TV</display-name>
     <icon src="logos/UCIHMK8qtjB_GNuXmeex6i8g.jpg"/>
   </channel>
-  <programme start="20260903160030 +0000" stop="20260903170030 +0000" channel="UCIHMK8qtjB_GNuXmeex6i8g">
-    <title>BİZİMEV TV / #canlıyayın #yaşam #life #belgesel 2026-09-03 16:00</title>
+  <programme start="20260904091649 +0000" stop="20260904101649 +0000" channel="UCIHMK8qtjB_GNuXmeex6i8g">
+    <title>BİZİMEV TV / #canlıyayın #yaşam #life #belgesel 2026-09-04 09:16</title>
     <desc>Live YouTube stream from BİZİMEV TV</desc>
     <category>Live</category>
   </programme>
@@ -22,8 +22,8 @@
     <display-name>Diyanet Çocuk</display-name>
     <icon src="logos/UCCfTktnzWK__FUN4gj0zIpA.jpg"/>
   </channel>
-  <programme start="20260903160030 +0000" stop="20260903170030 +0000" channel="UCCfTktnzWK__FUN4gj0zIpA">
-    <title>🔴 Diyanet Çocuk Canlı Yayın Çizgi Film 2026-09-03 16:00</title>
+  <programme start="20260904091649 +0000" stop="20260904101649 +0000" channel="UCCfTktnzWK__FUN4gj0zIpA">
+    <title>🔴 Diyanet Çocuk Canlı Yayın Çizgi Film 2026-09-04 09:16</title>
     <desc>Live YouTube stream from Diyanet Çocuk</desc>
     <category>Live</category>
   </programme>
