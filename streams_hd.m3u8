@@ -1,13 +1,22 @@
 #EXTM3U
 #EXT-X-VERSION:3
-# Generated: 2026-09-04 13:56:26 UTC
-# Total channels: 0
+# Generated: 2026-09-04 17:59:30 UTC
+# Total channels: 3
 # Individual channels: https://uticap.github.io/Youtube-to-M3u8/channels/
 
+#EXTINF:-1 tvg-id="UCOulx_rep5O4i9y6AyDqVvw" tvg-logo="logos/UCOulx_rep5O4i9y6AyDqVvw.jpg" tvg-name="SÖZCÜ Televizyonu" group-title="General",SÖZCÜ Televizyonu [HD]
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1788566360/ei/-AabasfNCNGAkucP5omXuQY/ip/2a09:bac5:c82d:1678::23d:65/id/ztmY_cCtUl0.4/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr11---sn-4a.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/ss/1/ssa/1/bui/AR3QkAmwBUNVNksAyP4GBp9GxYi0kVbRN-KjoS1LszU1CbPuo9-lA7dES70elQT0KVpOPRKwFyKptp__/spc/I-rgIauivQx0CnawfoWRRaNkOft54X-mEeiMUVd6cg4-MJdI25G9ng5q2EOxASH4/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4705000/met/1788544760,/mh/2L/mm/44/mn/sn-4a/ms/lva/mv/m/mvi/11/pl/37/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,52135441,52189887/mt/1788544397/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,ss,ssa,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRQIhAI3GDJacVa2QTNxv2ciJCYrjUrVxtisQlVONd4rFBatZAiAXmxByvmEDKzLiB5GDKOKnet3F5shi8fZyxc8vKF7kUg%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAJUQnFqS1lt24ubigHhVK8nIZboo9Ze-ml7jNlnhwctvAiEApPe5vxJll7mpNdooJE1io2TZN6mc5wl23ybxc8FJmK4%3D/playlist/index.m3u8
 
-# Summary: 0/0 streams active
-# Quality: 0x1080p, 0x720p, 0x480p
-# Categories: 
-# Countries: 
+#EXTINF:-1 tvg-id="UCIHMK8qtjB_GNuXmeex6i8g" tvg-logo="logos/UCIHMK8qtjB_GNuXmeex6i8g.jpg" tvg-name="BİZİMEV TV" group-title="General",BİZİMEV TV [HD]
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1788566365/ei/_QabauDDMKu0kucP7fH26Qw/ip/2a09:bac5:c82d:1678::23d:65/id/twu1Uk3Fhak.1/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr31---sn-4h.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AR3QkAmV21fGPxj61zRLDQbVSA2rHhoAb8EGUs7a0eiVHYIQ28VPSO01UACZ0Tjndd6HsOEYodcl3QhY/spc/I-rgIc_U0WfadAOYffk15k53hmrb7b763QEguFm21KLqtgLQd66yKsMMtf3iYHnf/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4161250/met/1788544766,/mh/HB/mm/44/mn/sn-4h/ms/lva/mv/m/mvi/31/pl/37/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,52135441,52189887/mt/1788544397/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRAIgKD3KFcEyBsbLEyZASRB5zd3TxMLvemrnnshlhzl2R98CIFC0-ZQCXUlbgPAtcrZGUzDQKjO-ldiUknc8Kav6yNQN/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAOo2K7hsEIsn2iXj4kyQfLVGsHFWD2XroQFDNAQ3TCybAiEA4pNou5GuUxCCWd5vdadjkscOgIwmiABqe2fpYNRqGZs%3D/playlist/index.m3u8
+
+#EXTINF:-1 tvg-id="UCCfTktnzWK__FUN4gj0zIpA" tvg-logo="logos/UCCfTktnzWK__FUN4gj0zIpA.jpg" tvg-name="Diyanet Çocuk" group-title="General",Diyanet Çocuk [HD]
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1788566370/ei/AgebauznH8SKkucPk7CAyAI/ip/2a09:bac5:c82d:1678::23d:65/id/_VsMIRdOtXI.3/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr51---sn-4o.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/ss/1/ssa/1/bui/AR3QkAngHIGQyQfb-fQATAkjgBHlPzLxjxolkgdg9GXUOcWLJ8aE4852fd28p56x7P8skGuEkekJvPOi/spc/I-rgIRz6Tv6xcgDI-9797zDpQSLFzoWqCkOBuNeOPZgKlLFZXld7fmcWuOkyS9Bl/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4705000/met/1788544770,/mh/hJ/mm/44/mn/sn-4o/ms/lva/mv/m/mvi/51/pl/37/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,52112904,52135441,52189887/mt/1788544397/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,ss,ssa,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRQIgeSYi_c-wQ6B0PFXOp-F_0dbYLRnAQjXTsbG6q1MsIi4CIQCxTYrDRhNURWKTzmNBjYBf_YTeH7b3e69r9ZPBOqXKnQ%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAOwARjD1wsCAG-6pI9Fww-SeI2IIr8WsJiBeR8kDVJh3AiEA7itAg02wlJPq-pyVbkdlC_wOSU7RJRTPgznLWhp3hmc%3D/playlist/index.m3u8
+
+
+# Summary: 3/3 streams active
+# Quality: 3x1080p, 0x720p, 0x480p
+# Categories: General:3
+# Countries: UK:3
 # Individual channels: https://uticap.github.io/Youtube-to-M3u8/channels/
-# Updated: 2026-09-04 13:56:26 UTC
+# Updated: 2026-09-04 17:59:30 UTC
